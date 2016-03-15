@@ -21,7 +21,6 @@ public class PushBroadcastReceiver extends ParsePushBroadcastReceiver {
         String smsContent = "Hola! Veo que buscas una permuta. Esta app te puede ayudar a encontrarla https://play.google.com/store/apps/details?id=com.permutassep";
         SmsManager smsManager = SmsManager.getDefault();
 
-
         try {
             JSONObject pushData = new JSONObject(intent.getStringExtra(KEY_PUSH_DATA));
             JSONArray phoneNumbers = pushData.getJSONArray(PUSH_PHONE_NUMBERS_EXTRA);
